@@ -9,24 +9,14 @@ string? firstNumberInput = Console.ReadLine();
 Console.WriteLine("Enter the second number:");
 string? secondNumberInput = Console.ReadLine();
 
-int? firstNumber = null, secondNumber = null;
+int firstNumber, secondNumber;
 
-if (firstNumberInput != null)
+if (int.TryParse(firstNumberInput, out firstNumber) && int.TryParse(secondNumberInput, out secondNumber))
 {
-    firstNumber = int.Parse(firstNumberInput);
-}
-
-if (secondNumberInput != null)
-{
-    secondNumber = int.Parse(secondNumberInput);
-}
-
-if (firstNumber != null && secondNumber != null)
-{
-    int sum = firstNumber.Value + secondNumber.Value;
+    int sum = firstNumber + secondNumber;
     Console.WriteLine($"The sum of {firstNumber} and {secondNumber} is: {sum}");
 }
 else 
 {
-    Console.WriteLine("Invalid input. Please enter valid numbers.");
+    Console.WriteLine("Invalid input!");
 }
