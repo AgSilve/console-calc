@@ -1,0 +1,85 @@
+# Binaries
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+# Visual Studio Code
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio cache files
+*.cache
+*.log
+*.vspscc
+*.vsp
+*.psess
+*.vspf
+*.userprefs
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.bak
+*.bak.*
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Resharper
+resharper/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# MonoDevelop
+*.pidb
+*.userprefs
+
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Ll]ibrary/
+nupkg/
+
