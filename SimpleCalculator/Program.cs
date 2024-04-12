@@ -27,10 +27,6 @@ else
     Console.WriteLine("Invalid input!");
     }
 }
-else if (userInputOperation == null)
-{
-    Console.WriteLine("Invalid input!");
-}
 else if (userInputOperation == "subtract" || userInputOperation =="Subtract" || userInputOperation == "sub" || userInputOperation == "Sub")
 {
      Console.WriteLine("Enter the first number:");
@@ -50,4 +46,8 @@ else
     {
     Console.WriteLine("Invalid input!");
     }
+}
+else if (userInputOperation == null)
+{
+    Console.WriteLine("Invalid input!");
 }
