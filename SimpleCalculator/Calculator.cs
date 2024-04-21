@@ -33,5 +33,48 @@ class ConsoleCalc
         Console.WriteLine("Enter second number:");
         string? secondInput = Console.ReadLine();
 
+        double num1, num2;
+
+        double.TryParse(firstInput, out num1);
+        double.TryParse(secondInput, out num2);
+
+        Console.WriteLine("Enter the operation (+, -, *, /):");
+        string? operation = Console.ReadLine();
+
+        double result = 0;
+
+        switch (operation)
+        {
+            case "+" :
+            result = calc.Add(num1, num2);
+            break;
+
+            case "-" :
+            result = calc.Sub(num1, num2);
+            break;
+
+            case "*" :
+            result = calc.Mult(num1, num2);
+            break; 
+            
+            case "/":
+                if (num2 != 0) 
+                {
+                    result = calc.Div(num1, num2);
+                }
+                else
+                {
+                    Console.WriteLine("Error: Division by zero");
+                    return;
+                }
+                break;
+
+            default:
+            Console.WriteLine("Invalid operation!");
+            break;
+        }
+
+        Console.WriteLine($"Result: {result}");
+
     }
 }
