@@ -20,3 +20,18 @@ public class Calculator
         return num1 / num2 ;
     }
 }
+
+class ConsoleCalc
+{
+    static void Main(string[] args)
+    {
+        Calculator calc = new();
+
+        Console.WriteLine("Enter first number:");
+        string? firstInput = Console.ReadLine();
+
+        Console.WriteLine("Enter second number:");
+        string? secondInput = Console.ReadLine();
+
+    }
+}
